@@ -1,0 +1,35 @@
+#header {
+    background-color: var(--primary-bg-color);
+    padding: 0.3rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    color: var(--primary-text-color) !important;
+}
+
+.nav-link {
+    color: var(--primary-text-color) !important;
+    transition: all var(--transition-speed) ease;
+}
+
+.nav-link:hover {
+    color: var(--icon-color) !important;
+}
+
+.bi {
+    color: var(--icon-color);
+}
+
+.display-right {
+    padding-left: 32rem;
+}
+
+@media screen and (max-width: 768px) {
+    .display-right {
+        padding-left: 0;
+    }
+}

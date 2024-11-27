@@ -1,0 +1,61 @@
+:root {
+    --primary-bg-color: #292929;
+    --primary-text-color: #ffffff;
+    --accent-color: #945e2cc5;
+    --icon-color: #f08f11;
+    --hover-bg-color: hsla(29, 76%, 21%, 0.801);
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--accent-color);
+    color: var(--primary-text-color);
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: var(--icon-color);
+    color: var(--primary-text-color);
+    box-shadow: 0 0 0 0.2rem rgba(240, 143, 17, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--icon-color);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    transition: all var(--transition-speed) ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-bg-color);
+    transform: scale(1.02);
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: block;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2Q0YWYzNyIgZD0iTTIxLDZoLTRWM2EyLDIsMCwwLDAtMi0ySDlBMiwyLDAsMCwwLDcsM1Y2SDNBMiwyLDAsMCwwLDEsOFYyMGEyLDIsMCwwLDAsMiwySDIxYTIsMiwwLDAsMCwyLTJWOEEyLDIsMCwwLDAsMjEsNloiLz48L3N2Zz4=');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
